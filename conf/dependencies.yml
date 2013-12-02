@@ -2,7 +2,7 @@
 
 require:
     - play
-    - provided -> QuanserClient 1.0 
+    - provided -> BRCollector 2.0
     
 repositories: 
     - provided: 
