@@ -2,3 +2,11 @@
 
 require:
     - play
+    - provided -> QuanserClient 1.0 
+    
+repositories: 
+    - provided: 
+        type:       local 
+        artifact:   "${application.path}/lib/[module]-[revision].jar" 
+        contains: 
+            - provided -> * 
