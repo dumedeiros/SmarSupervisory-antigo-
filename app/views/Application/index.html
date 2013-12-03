@@ -3,14 +3,17 @@
 
 <input type="text" id="t">
 <input type="button" value="asdad" id="conect">
+<input type="button" value="asdad" id="s">
 
 <script>
 
     jQuery("#conect").click(function() {
-        jQuery.get("@{read}", function(n) {
-            alert(n.m)
+        jQuery.get("@{Supervisory.a()}", function() {
         });
     });
 
-
+    jQuery("#s").click(function() {
+        jQuery.get("@{Supervisory.s()}", function() {
+        });
+    });
 </script>

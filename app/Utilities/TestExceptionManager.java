@@ -1,4 +1,4 @@
-package controllers;
+package Utilities;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -10,7 +10,7 @@ import java.util.logging.Logger;
 public class TestExceptionManager {
 
     public static void log(String message, Exception ex) {
-        Logger.getLogger(TestRDA.class.getName()).log(Level.SEVERE, null, ex);
+        Logger.getLogger(RDAConnection.class.getName()).log(Level.SEVERE, null, ex);
         System.err.println(message);
         System.err.println("Teste encerrado.");
         System.exit(0);
