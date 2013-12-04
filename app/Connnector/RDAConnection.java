@@ -29,11 +29,9 @@ public class RDAConnection {
     private TagItemGroup tagItemGroup;
 
     public RDAConnection() {
-        JOptionPane.showMessageDialog(null, "asda");
 
         request = null;
         try {
-            JOptionPane.showMessageDialog(null, BRCollectorTestConstants.HOST);
             request = CollectorConnectionProvider.connectToCollector(BRCollectorTestConstants.HOST,
                     BRCollectorTestConstants.PORT,
                     BRCollectorTestConstants.SERVICE_NAME);

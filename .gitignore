@@ -1,4 +1,8 @@
-/tmp
-/modules
-/test-result
-/logs
+bin/
+data/
+db/
+dist/
+logs/
+test-result/
+tmp/
+modules/
