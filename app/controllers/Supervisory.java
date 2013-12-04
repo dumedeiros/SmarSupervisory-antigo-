@@ -5,10 +5,8 @@
 package controllers;
 
 import Utilities.ExecThread;
-import Connnector.RDAConnection;
 import java.util.HashMap;
 import java.util.Map;
-import javax.swing.JOptionPane;
 import play.mvc.Controller;
 
 /**
@@ -18,7 +16,7 @@ import play.mvc.Controller;
 public class Supervisory extends Controller {
 
     public static ExecutionTrhead thread = new ExecutionTrhead(false);
-    private static RDAConnection conn = new RDAConnection();
+//    private static RDAConnection conn = new RDAConnection();
     private static String d = "";
     private static int i = 0;
     
@@ -49,12 +47,13 @@ public class Supervisory extends Controller {
 
         @Override
         public void run() {
-            conn.init();
+//            conn.init();
 
             while (true) {
 //                System.out.println("executing");
                 i++;
-                d = i + conn.aquireData();
+//                d = i + conn.aquireData();
+                d = i + "";
 //                systemData.valorTq1 = Application.quanserController.read(0) * 6.25;
 //                systemData.valorTq2 = Application.quanserController.read(1) * 6.25;
 //
