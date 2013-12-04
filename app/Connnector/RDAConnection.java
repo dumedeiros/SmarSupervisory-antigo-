@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package Utilities;
+package Connnector;
 
 import br.ufrn.lii.brcollector.connection.CollectorConnectionProvider;
 import br.ufrn.lii.brcollector.connection.exception.AlreadyMappedException;
@@ -16,6 +16,7 @@ import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -28,8 +29,11 @@ public class RDAConnection {
     private TagItemGroup tagItemGroup;
 
     public RDAConnection() {
+        JOptionPane.showMessageDialog(null, "asda");
+
         request = null;
         try {
+            JOptionPane.showMessageDialog(null, BRCollectorTestConstants.HOST);
             request = CollectorConnectionProvider.connectToCollector(BRCollectorTestConstants.HOST,
                     BRCollectorTestConstants.PORT,
                     BRCollectorTestConstants.SERVICE_NAME);
@@ -58,9 +62,9 @@ public class RDAConnection {
         System.out.println("TagsAdicionadas ao grupo");
     }
 
-    public void aquireData() {
-        getCurrentValues(requestRDA, tagItemGroup);
-        System.out.println("Current Values obtidos");
+    public String aquireData() {
+        return getCurrentValues(requestRDA, tagItemGroup);
+//        System.out.println("Current Values obtidos");
     }
 
     private List<String> listServerRDA() {
@@ -115,17 +119,21 @@ public class RDAConnection {
         }
     }
 
-    private Map<TagItem, ProcessData> getCurrentValues(RequestRDA requestRDA, TagItemGroup tagItemGroup) {
+    private String getCurrentValues(RequestRDA requestRDA, TagItemGroup tagItemGroup) {
+//    private Map<TagItem, ProcessData> getCurrentValues(RequestRDA requestRDA, TagItemGroup tagItemGroup) {
+        String d = "";
         try {
             Map<TagItem, ProcessData> currentValues = requestRDA.getCurrentValues(tagItemGroup);
 
             Set<TagItem> keySet = currentValues.keySet();
             System.out.println("Current Values Obtidos:");
             for (TagItem key : keySet) {
-                System.out.println(key + " | " + currentValues.get(key).getValue().getStringValue());
+//                System.out.println(key + " | " + currentValues.get(key).getValue().getStringValue());
+                d += key;
             }
 
-            return currentValues;
+            return d;
+//            return currentValues;
         } catch (RemoteException ex) {
             TestExceptionManager.log("Errou no getCurrentValues RDA.", new Exception(ex));
         } catch (UnregisteredGroupException ex) {

@@ -4,6 +4,8 @@
 <input type="text" id="t">
 <input type="button" value="asdad" id="conect">
 <input type="button" value="asdad" id="s">
+<input type="button" value="asdad" id="b">
+<div id="txt"></div>
 
 <script>
 
@@ -14,6 +16,12 @@
 
     jQuery("#s").click(function() {
         jQuery.get("@{Supervisory.s()}", function() {
+        });
+    });
+
+    jQuery("#b").click(function() {
+        jQuery.getJSON("@{Supervisory.data()}", function(data) {
+            jQuery("#txt").text(data.d);
         });
     });
 </script>

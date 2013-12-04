@@ -5,7 +5,9 @@
 package controllers;
 
 import Utilities.ExecThread;
-import Utilities.RDAConnection;
+import Connnector.RDAConnection;
+import java.util.HashMap;
+import java.util.Map;
 import javax.swing.JOptionPane;
 import play.mvc.Controller;
 
@@ -14,35 +16,45 @@ import play.mvc.Controller;
  * @author
  */
 public class Supervisory extends Controller {
-    
+
     public static ExecutionTrhead thread = new ExecutionTrhead(false);
     private static RDAConnection conn = new RDAConnection();
+    private static String d = "";
+    private static int i = 0;
     
+
     public static void a() {
         thread.doResume();
     }
-    
-     public static void s() {
+
+    public static void s() {
         thread.doSuspend();
     }
-    
+
+    public static void data() {
+        Map data = new HashMap<Object, Object>();
+        data.put("d", d);
+        renderJSON(data);
+    }
+
     public static class ExecutionTrhead extends ExecThread {
-        
+
         public ExecutionTrhead() {
             super();
         }
-        
+
         public ExecutionTrhead(boolean b) {
             super(b);
         }
-        
+
         @Override
         public void run() {
             conn.init();
-            
+
             while (true) {
 //                System.out.println("executing");
-                conn.aquireData();
+                i++;
+                d = i + conn.aquireData();
 //                systemData.valorTq1 = Application.quanserController.read(0) * 6.25;
 //                systemData.valorTq2 = Application.quanserController.read(1) * 6.25;
 //
