@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 
+<<<<<<< HEAD
 <html lang="en-US">
     <head>
 
@@ -382,4 +383,30 @@
         });
     });
     
+=======
+COM CLASSES De novo
+<input type="text" id="t">
+<input type="button" value="asdad" id="conect">
+<input type="button" value="asdad" id="s">
+<input type="button" value="asdad" id="b">
+<div id="txt"></div>
+
+<script>
+
+    jQuery("#conect").click(function() {
+        jQuery.get("@{Supervisory.a()}", function() {
+        });
+    });
+
+    jQuery("#s").click(function() {
+        jQuery.get("@{Supervisory.s()}", function() {
+        });
+    });
+
+    jQuery("#b").click(function() {
+        jQuery.getJSON("@{Supervisory.data()}", function(data) {
+            jQuery("#txt").text(data.d);
+        });
+    });
+>>>>>>> 4c25cef7bbe811286722413f27c31f42d6fe570f
 </script>
