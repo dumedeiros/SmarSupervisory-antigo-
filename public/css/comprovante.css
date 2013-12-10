@@ -1,0 +1,31 @@
+#separador {
+    color: #CCC;
+}
+#asdsa {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+#tabelaItens th {
+    text-align: left;
+    width: 130px;
+}
+
+.tituloDocumento {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-decoration: underline;
+}
+#tabelaItens {
+}
+.tabela {
+}
+#nomeUsuario {
+    text-align: center;
+    margin-top: 30px;
+}
+#descricaoDocumento {
+    margin-right: 20px;
+    margin-left: 20px;
+}

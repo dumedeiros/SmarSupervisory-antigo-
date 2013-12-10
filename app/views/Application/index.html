@@ -1,4 +1,385 @@
-#{extends 'main.html' /}
-#{set title:'Home' /}
+<!DOCTYPE HTML>
 
-#{welcome /}
+<html lang="en-US">
+    <head>
+
+        <!--<link rel='stylesheet'  href="@{'public/css/styles.css'}" />-->
+        <link rel='stylesheet'  href="@{'public/plugin/revslider/css/settings.css'}" />
+        <link rel='stylesheet'  href="@{'public/plugin/revslider/css/dynamic-captions.css'}" />
+        <link rel='stylesheet'  href="@{'public/plugin/revslider/css/static-captions.css'}" />
+        <link rel='stylesheet'  href="@{'public/css/slicknav.css'}" />
+        <link rel='stylesheet'  href="@{'public/css/custom.php.css'}" />
+        <link rel='stylesheet'  href="@{'public/css/style.css'}" />
+        <link rel='stylesheet'  href="@{'public/css/css.css'}" />
+        <link rel='stylesheet'  href="@{'public/css/transitions.css'}" />
+
+        <link rel="stylesheet" media="screen" href="@{'public/plugin/uLoginBox/css/uLoginbox.css'}" />
+        <link rel="stylesheet" media="screen" href="@{'public/css/main.css'}"/>
+        <link rel="stylesheet" media="screen" href="@{'public/css/messagesBox.css'}"/>
+        <link rel='stylesheet'  href="@{'public/css/bootstrap.css'}" />
+        <link rel="stylesheet" media="screen" href="@{'public/css/css-form.css'}"/>
+
+
+        <script type="text/javascript" src="@{'public/js/jquery1.10.2.js'}"></script> 
+        <script type="text/javascript" src="@{'public/js/jquery-migrate.min.js'}"></script> 
+        <script type="text/javascript" src="@{'public/js/comment-reply.min.js'}"></script> 
+        <script type="text/javascript" src="@{'public/plugin/revslider/js/jquery.themepunch.plugins.min.js'}"></script> 
+        <script type="text/javascript" src="@{'public/plugin/revslider/js/jquery.themepunch.revolution.min.js'}"></script> 
+        <script type="text/javascript" src="@{'public/js/html5.js'}"></script> 
+        <script type="text/javascript" src="@{'public/js/modernizr.js'}"></script> 
+        <script type="text/javascript" src="@{'public/plugin/uLoginBox/js/uLoginBox.js'}"></script>
+
+        <!--[if gte IE 9]>
+        <style>
+        .video-js video { display:none; }
+        .video-js .vjs-poster { display:block !important; }
+        </style>
+        <![endif]-->
+    </head>
+    <body class="home">
+        <header class="def header">
+            <div class="shell">
+                <section class="left location"><span class="iconed-address">375 Valencia St. San Francisco, CA 94103</span><span class="iconed-phone">(123) 456-7890</span></section>		
+                <a href="http://demo.scheetzdesigns.com/espresso"><img src="http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/images/logo.png" class="logo-image" alt="" /></a>
+                <a class="cart-contents" href="http://demo.scheetzdesigns.com/espresso/cart/" title="View your shopping cart">0 items - <span class="amount">&#36;0</span></a>
+            </div>
+        </header>
+        <nav id="main-nav" class="full">
+
+
+            <div class="shell">
+                <ul id="menu-main-menu" class="menu">
+                    <li class="menu-item "><a href="#" id="login" >Homepages</a>
+                        <section class="dropdown"><ul>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/">Slider Revolution</a></li>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/espresso-wordpress-theme-blur-slider/">Espresso Blur Slider</a></li>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/no-slider/">No Slider</a></li>
+                            </ul>
+                        </section>
+                    </li>
+                    <li class="menu-item"><a href="#">Pages</a>
+                        <section class="dropdown"><ul>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/full-page-width/">Full Page Width</a></li>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/visual-composer-page/">Visual Composer Page</a></li>
+                            </ul></section>
+                    </li>
+                    <li class="menu-item "><a href="http://demo.scheetzdesigns.com/espresso/menu-builder/">Menu Builder</a>
+                        <section class="dropdown"><ul>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/menu-builder/">Espresso Menu Builder</a></li>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/espresso-menus/coffees/">Coffees</a></li>
+                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/espresso-menus/lunch-menu/">Lunch Menu</a></li>
+                            </ul></section>
+                    </li>
+                </ul>	
+            </div>
+        </nav>
+        <div id="slider-wrap" class="loader-block top-loader"><!-- START REVOLUTION SLIDER 4.1 fullwidth mode -->
+
+            <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#111111;padding:0px;margin-top:0px;margin-bottom:0px;max-height:558px;">
+                <div id="rev_slider_1_1" class="rev_slider fullwidthabanner" style="display:none;max-height:558px;height:558;">
+                    <ul>	<!-- SLIDE  -->
+                        <li data-transition="random" data-slotamount="7" data-masterspeed="300" >
+                            <!-- MAIN IMAGE -->
+                            <img src="http://demo.scheetzdesigns.com/espresso/wp-content/plugins/revslider/images/transparent.png"  alt="slide_image_01.883b834b5c"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption tp-fade fadeout fullscreenvideo"
+                                 data-x="0"
+                                 data-y="0"
+                                 data-speed="800"
+                                 data-start="200"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="800"
+                                 data-autoplay="true"
+                                 data-autoplayonlyfirsttime="false"
+                                 data-dottedoverlay=""			style="z-index: 2"><video class="video-js vjs-default-skin" loop preload="none" width="100%" height="100%" 
+                                                                              poster='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.png' data-setup="{}"> 
+                                    <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.mp4' type='video/mp4' />
+                                    <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.webm' type='video/webm' />
+                                    <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.png.ogv' type='video/ogg' />
+                                </video>
+
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption tp-fade"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="center" data-voffset="0"
+                                 data-speed="300"
+                                 data-start="250"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 3"><img src="http://demo.scheetzdesigns.com/espresso/files/2013/11/grid.png" alt="">
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption espresso_large_white sft stt"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="bottom" data-voffset="-375"
+                                 data-speed="400"
+                                 data-start="1000"
+                                 data-easing="easeOutExpo"
+                                 data-endspeed="400"
+                                 data-endeasing="easeOutExpo"
+                                 style="z-index: 4">Welcome to Espresso.
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption medium_text sft stt"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="center" data-voffset="-45"
+                                 data-speed="400"
+                                 data-start="1400"
+                                 data-easing="easeOutExpo"
+                                 data-endspeed="400"
+                                 style="z-index: 5">A really nice WordPress theme for restaurants.
+                            </div>
+
+                            <!-- LAYER NR. 5 -->
+                            <div class="tp-caption sft"
+                                 data-x="center" data-hoffset="0"
+                                 data-y="325" 
+                                 data-speed="300"
+                                 data-start="1900"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 6"><a href="http://demo.scheetzdesigns.com/espresso/events/upcoming/"><img src="http://demo.scheetzdesigns.com/espresso/files/2013/11/button_events.jpg" alt=""></a>
+                            </div>
+
+                            <!-- LAYER NR. 6 -->
+                            <div class="tp-caption sft"
+                                 data-x="right" data-hoffset="-836"
+                                 data-y="325" 
+                                 data-speed="300"
+                                 data-start="1800"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 7"><a href="http://demo.scheetzdesigns.com/espresso/espresso-menus/coffees/"><img src="http://demo.scheetzdesigns.com/espresso/files/2013/11/button_menu.jpg" alt=""></a>
+                            </div>
+
+                            <!-- LAYER NR. 7 -->
+                            <div class="tp-caption sft"
+                                 data-x="836"
+                                 data-y="325" 
+                                 data-speed="300"
+                                 data-start="2000"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 8"><a href="http://demo.scheetzdesigns.com/espresso/reservation/"><img src="http://demo.scheetzdesigns.com/espresso/files/2013/11/button_book.jpg" alt=""></a>
+                            </div>
+                        </li>
+                        <!-- SLIDE  -->
+                        <li data-transition="fade" data-slotamount="7" data-masterspeed="600" >
+                            <!-- MAIN IMAGE -->
+                            <img src="http://demo.scheetzdesigns.com/espresso/files/2013/10/slide_image_02.09afb0f9da.jpg"  alt="slide_image_02.09afb0f9da"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <!-- LAYERS -->
+
+                            <!-- LAYER NR. 1 -->
+                            <div class="tp-caption large_bg_black skewfromleftshort tp-resizeme"
+                                 data-x="104"
+                                 data-y="bottom" data-voffset="-393"
+                                 data-speed="300"
+                                 data-start="300"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 2">The amazing Slider Revolution plugin is included.
+                            </div>
+
+                            <!-- LAYER NR. 2 -->
+                            <div class="tp-caption modern_big_redbg skewfromleftshort tp-resizeme"
+                                 data-x="104"
+                                 data-y="165" 
+                                 data-speed="300"
+                                 data-start="500"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 3">A $16 value, totally free.
+                            </div>
+
+                            <!-- LAYER NR. 3 -->
+                            <div class="tp-caption large_bg_green skewfromrightshort tp-resizeme"
+                                 data-x="right" data-hoffset="-138"
+                                 data-y="bottom" data-voffset="-225"
+                                 data-speed="300"
+                                 data-start="700"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 4">Create cool, animated sliders like this one.
+                            </div>
+
+                            <!-- LAYER NR. 4 -->
+                            <div class="tp-caption mediumwhitebg skewfromrightshort tp-resizeme"
+                                 data-x="right" data-hoffset="-138"
+                                 data-y="333" 
+                                 data-speed="300"
+                                 data-start="900"
+                                 data-easing="Power3.easeInOut"
+                                 data-endspeed="300"
+                                 style="z-index: 5">So many options, unlimited creativity.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>			
+            <script type="text/javascript">
+
+                var tpj=jQuery;				
+                tpj.noConflict();				
+                var revapi1;
+				
+                tpj(document).ready(function() {
+								
+                    if(tpj('#rev_slider_1_1').revolution == undefined)
+                        revslider_showDoubleJqueryError('#rev_slider_1_1');
+                    else
+                        revapi1 = tpj('#rev_slider_1_1').show().revolution(
+                    {
+                        dottedOverlay:"none",
+                        delay:9000,
+                        startwidth:1440,
+                        startheight:558,
+                        hideThumbs:200,
+						
+                        thumbWidth:100,
+                        thumbHeight:50,
+                        thumbAmount:2,
+						
+                        navigationType:"bullet",
+                        navigationArrows:"solo",
+                        navigationStyle:"round",
+						
+                        touchenabled:"on",
+                        onHoverStop:"on",
+						
+                        navigationHAlign:"center",
+                        navigationVAlign:"bottom",
+                        navigationHOffset:0,
+                        navigationVOffset:20,
+
+                        soloArrowLeftHalign:"left",
+                        soloArrowLeftValign:"center",
+                        soloArrowLeftHOffset:20,
+                        soloArrowLeftVOffset:0,
+
+                        soloArrowRightHalign:"right",
+                        soloArrowRightValign:"center",
+                        soloArrowRightHOffset:20,
+                        soloArrowRightVOffset:0,
+								
+                        shadow:0,
+                        fullWidth:"on",
+                        fullScreen:"off",
+
+                        stopLoop:"off",
+                        stopAfterLoops:-1,
+                        stopAtSlide:-1,
+
+						
+                        shuffle:"off",
+						
+                        autoHeight:"off",						
+                        forceFullWidth:"off",						
+												
+												
+                        hideThumbsOnMobile:"off",
+                        hideBulletsOnMobile:"off",
+                        hideArrowsOnMobile:"off",
+                        hideThumbsUnderResolution:0,
+						
+                        hideSliderAtLimit:0,
+                        hideCaptionAtLimit:0,
+                        hideAllCaptionAtLilmit:0,
+                        startWithSlide:0,
+                        videoJsPath:"http://demo.scheetzdesigns.com/espresso/wp-content/plugins/revslider/rs-plugin/videojs/",
+                        fullScreenOffsetContainer: ""	
+                    });
+				
+                });	//ready
+				
+            </script>
+
+            <!-- END REVOLUTION SLIDER --></div>
+        <section id="ctas">
+            asdasd
+        </section>
+        <div class="bottom-spacer"></div>
+        <section id="footer-widgets">
+            <div class="overlay">
+                <div class="shell clearfix">
+
+
+                </div>
+            </div>
+        </section><footer class="clearfix">
+            <div class="shell">
+                <section class="left">
+                    Copyright &copy;2013 Eduardo Medeiros.
+                </section>
+            </div>
+        </footer><div class="customizer-style-main"></div><div class="customizer-style-alt"></div>
+
+        <script type='text/javascript' src='../../public/js/jquery.slicknav.min.js'></script>
+        <script type='text/javascript' src='../../public/js/jquery.easing.js'></script>
+        <script type='text/javascript' src='../../public/js/fitvids.js'></script>
+        <script type='text/javascript' src='../../public/js/jquery.main.js'></script>
+
+        <!--<script type="text/javascript" src="@{'public/js/jquery.slicknav.min.js'}"></script>--> 
+
+        <!--<script type='text/javascript' src="@{'public/js/jquery.slicknav.min.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.carouFredSel-6.2.1-packed.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.collagePlus.min.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.collageCaption.min.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.removeWhitespace.min.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.easing.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/fitvids.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/StackBoxBlur.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/magnific.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.blurSlider.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.easing.js'}" />-->
+        <!--<script type='text/javascript' src="@{'public/js/jquery.main.js'}" />-->
+
+        <!--        <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.slicknav.min.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.carouFredSel-6.2.1-packed.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.collagePlus.min.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.collageCaption.min.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.removeWhitespace.min.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.easing.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/fitvids.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/StackBoxBlur.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/magnific.js?ver=0.9.5'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.blurSlider.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/js/jquery.main.js?ver=1.0'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=2.0.20'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.60'></script>
+                <script type='text/javascript' src='http://demo.scheetzdesigns.com/espresso/wp-content/plugins/woocommerce/assets/js/jquery-placeholder/jquery.placeholder.min.js?ver=2.0.20'></script>
+        --></body>
+</html>
+
+<script>
+    
+   
+    
+    uLoginBox.init({});
+    
+    jQuery('#login').click(function(){
+        uLoginBox.alert({
+            width: '500px',
+            opened: function() {
+                //                $("#matricula").focus();
+                //                $("#matricula, #senha").keypress(function(event) {
+                //                    if ( event.which == KEYCODE_ENTER ) {
+                //                        //loginAjax();
+                //         π           }
+                //                });
+                $('#loginCancel').click(function(){
+                    uLoginBox.clear(); 
+                });
+                $('#botao').click(function(){
+                    //loginAjax();
+                });
+            }
+        });
+    });
+    
+</script>
