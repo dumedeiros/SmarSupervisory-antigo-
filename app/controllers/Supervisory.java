@@ -17,7 +17,7 @@ import play.mvc.Controller;
 public class Supervisory extends Controller {
 
     public static ExecutionTrhead thread = new ExecutionTrhead(false);
-    private static RDAConnection conn = new RDAConnection();
+//    private static RDAConnection conn = new RDAConnection();
     private static String d = "";
     private static int i = 0;
     

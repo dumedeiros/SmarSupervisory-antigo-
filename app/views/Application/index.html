@@ -1,6 +1,5 @@
 <!DOCTYPE HTML>
 
-<<<<<<< HEAD
 <html lang="en-US">
     <head>
 
@@ -17,8 +16,9 @@
         <link rel="stylesheet" media="screen" href="@{'public/plugin/uLoginBox/css/uLoginbox.css'}" />
         <link rel="stylesheet" media="screen" href="@{'public/css/main.css'}"/>
         <link rel="stylesheet" media="screen" href="@{'public/css/messagesBox.css'}"/>
-        <link rel='stylesheet'  href="@{'public/css/bootstrap.css'}" />
         <link rel="stylesheet" media="screen" href="@{'public/css/css-form.css'}"/>
+        <link rel='stylesheet'  href="@{'public/plugin/bootstrap/css/bootstrap.css'}" />
+
 
 
         <script type="text/javascript" src="@{'public/js/jquery1.10.2.js'}"></script> 
@@ -28,7 +28,10 @@
         <script type="text/javascript" src="@{'public/plugin/revslider/js/jquery.themepunch.revolution.min.js'}"></script> 
         <script type="text/javascript" src="@{'public/js/html5.js'}"></script> 
         <script type="text/javascript" src="@{'public/js/modernizr.js'}"></script> 
+        <script type="text/javascript" src="@{'public/plugin/bootstrap/js/bootstrap.js'}"></script>
+        <script type="text/javascript" src="@{'public/js/util.js'}"></script>
         <script type="text/javascript" src="@{'public/plugin/uLoginBox/js/uLoginBox.js'}"></script>
+
 
         <!--[if gte IE 9]>
         <style>
@@ -40,40 +43,61 @@
     <body class="home">
         <header class="def header">
             <div class="shell">
-                <section class="left location"><span class="iconed-address">375 Valencia St. San Francisco, CA 94103</span><span class="iconed-phone">(123) 456-7890</span></section>		
-                <a href="http://demo.scheetzdesigns.com/espresso"><img src="http://demo.scheetzdesigns.com/espresso/wp-content/themes/espresso/images/logo.png" class="logo-image" alt="" /></a>
-                <a class="cart-contents" href="http://demo.scheetzdesigns.com/espresso/cart/" title="View your shopping cart">0 items - <span class="amount">&#36;0</span></a>
+                <section class="left location"><span class="iconed-address">Place1</span><span class="iconed-phone">Ph1</span></section>		
+                <a href="http://demo.scheetzdesigns.com/espresso"><img src="@{'public/img/bcg-4.png'}" class="logo-image" alt="" /></a>
+                <a class="cart-contents" href="http://demo.scheetzdesigns.com/espresso/cart/" title="View your shopping cart">Place2</a>
             </div>
         </header>
+
         <nav id="main-nav" class="full">
-
-
             <div class="shell">
                 <ul id="menu-main-menu" class="menu">
-                    <li class="menu-item "><a href="#" id="login" >Homepages</a>
+                    <li class="menu-item "><a href="#" id="login" >Menu 1</a>
                         <section class="dropdown"><ul>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/">Slider Revolution</a></li>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/espresso-wordpress-theme-blur-slider/">Espresso Blur Slider</a></li>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/no-slider/">No Slider</a></li>
+                                <li class="menu-item"><a href="#">Sub-1</a></li>
+                                <li class="menu-item"><a href="#">Sub-2</a></li>
+                                <li class="menu-item"><a href="#">Sub-3</a></li>
                             </ul>
                         </section>
                     </li>
-                    <li class="menu-item"><a href="#">Pages</a>
+                    <li class="menu-item" id="login2"><a href="#">Menu 2</a>
                         <section class="dropdown"><ul>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/full-page-width/">Full Page Width</a></li>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/visual-composer-page/">Visual Composer Page</a></li>
+                                <li class="menu-item"><a href="#">Sub-1</a></li>
+                                <li class="menu-item"><a href="#">Sub-2</a></li>
                             </ul></section>
                     </li>
-                    <li class="menu-item "><a href="http://demo.scheetzdesigns.com/espresso/menu-builder/">Menu Builder</a>
-                        <section class="dropdown"><ul>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/menu-builder/">Espresso Menu Builder</a></li>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/espresso-menus/coffees/">Coffees</a></li>
-                                <li class="menu-item"><a href="http://demo.scheetzdesigns.com/espresso/espresso-menus/lunch-menu/">Lunch Menu</a></li>
-                            </ul></section>
+                    <li class="menu-item "><a href="#">Menu-3</a>
                     </li>
                 </ul>	
             </div>
         </nav>
+        <div style="height: 60px; width: 100%;background: rgb(169,3,41); /* Old browsers */
+             /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+             background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNhOTAzMjkiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI0NCUiIHN0b3AtY29sb3I9IiM4ZjAyMjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNmQwMDE5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+             background: -moz-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%, rgba(143,2,34,1) 44%, rgba(109,0,25,1) 100%); /* FF3.6+ */
+             background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(169,3,41,1)), color-stop(44%,rgba(143,2,34,1)), color-stop(100%,rgba(109,0,25,1))); /* Chrome,Safari4+ */
+             background: -webkit-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Chrome10+,Safari5.1+ */
+             background: -o-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* Opera 12+ */
+             background: -ms-radial-gradient(center, ellipse cover,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* IE10+ */
+             background: radial-gradient(ellipse at center,  rgba(169,3,41,1) 0%,rgba(143,2,34,1) 44%,rgba(109,0,25,1) 100%); /* W3C */
+             filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+             " class="notDisplayable" id="tt">
+            <div class="erroneou" style="height: 100%;  width: 100%;  z-index: 1; color: white; font-weight: bold;
+                 line-height: 50%;
+                 text-align: center;" >
+                <span style="font-family: Garamond, serif;
+                      line-height: 1em;
+                      color: #ffffff;
+                      font-weight:bold;
+                      font-size: 18px;
+                      text-shadow:0px 0px 0 rgb(128,128,128),1px 1px 0 rgb(0,0,0), 2px 2px 0 rgb(-127,-127,-127),3px 3px 2px rgba(0,0,0,0.15),3px 3px 1px rgba(0,0,0,0.5),0px 0px 2px rgba(0,0,0,.2);
+                      line-height: 50px; 
+                      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;">${flash.error}asasdkasdaskdasd  andand  asdas</span>
+                <div class="msg-box-icon pngfix" style="text-align: center;margin: 0 auto; background: green">
+
+                </div>
+            </div>
+        </div>
         <div id="slider-wrap" class="loader-block top-loader"><!-- START REVOLUTION SLIDER 4.1 fullwidth mode -->
 
             <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" style="margin:0px auto;background-color:#111111;padding:0px;margin-top:0px;margin-bottom:0px;max-height:558px;">
@@ -81,7 +105,7 @@
                     <ul>	<!-- SLIDE  -->
                         <li data-transition="random" data-slotamount="7" data-masterspeed="300" >
                             <!-- MAIN IMAGE -->
-                            <img src="http://demo.scheetzdesigns.com/espresso/wp-content/plugins/revslider/images/transparent.png"  alt="slide_image_01.883b834b5c"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <img src="@{'public/img/mainback.png'}"  alt="slide_image_01.883b834b5c"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -94,11 +118,11 @@
                                  data-endspeed="800"
                                  data-autoplay="true"
                                  data-autoplayonlyfirsttime="false"
-                                 data-dottedoverlay=""			style="z-index: 2"><video class="video-js vjs-default-skin" loop preload="none" width="100%" height="100%" 
-                                                                              poster='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.png' data-setup="{}"> 
-                                    <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.mp4' type='video/mp4' />
-                                    <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.webm' type='video/webm' />
-                                    <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.png.ogv' type='video/ogg' />
+                                 data-dottedoverlay="" style="z-index: 2"><video class="video-js vjs-default-skin" loop preload="none" width="100%" height="100%" 
+                                                                            poster=@{'public/img/mainback.png'} data-setup="{}"> 
+                                    <!--                                    <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.mp4' type='video/mp4' />
+                                                                        <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.webm' type='video/webm' />
+                                                                        <source src='http://demo.scheetzdesigns.com/espresso_assets/espresso_slider_video.png.ogv' type='video/ogg' />-->
                                 </video>
 
                             </div>
@@ -123,7 +147,7 @@
                                  data-easing="easeOutExpo"
                                  data-endspeed="400"
                                  data-endeasing="easeOutExpo"
-                                 style="z-index: 4">Welcome to Espresso.
+                                 style="z-index: 4">Smar Supervisory.
                             </div>
 
                             <!-- LAYER NR. 4 -->
@@ -134,7 +158,7 @@
                                  data-start="1400"
                                  data-easing="easeOutExpo"
                                  data-endspeed="400"
-                                 style="z-index: 5">A really nice WordPress theme for restaurants.
+                                 style="z-index: 5">Sistema supervisório da planta da Smar
                             </div>
 
                             <!-- LAYER NR. 5 -->
@@ -173,7 +197,7 @@
                         <!-- SLIDE  -->
                         <li data-transition="fade" data-slotamount="7" data-masterspeed="600" >
                             <!-- MAIN IMAGE -->
-                            <img src="http://demo.scheetzdesigns.com/espresso/files/2013/10/slide_image_02.09afb0f9da.jpg"  alt="slide_image_02.09afb0f9da"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
+                            <img src="@{'public/img/mainback.png'}" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
                             <!-- LAYERS -->
 
                             <!-- LAYER NR. 1 -->
@@ -184,7 +208,7 @@
                                  data-start="300"
                                  data-easing="Power3.easeInOut"
                                  data-endspeed="300"
-                                 style="z-index: 2">The amazing Slider Revolution plugin is included.
+                                 style="z-index: 2">Confiabilidade
                             </div>
 
                             <!-- LAYER NR. 2 -->
@@ -195,7 +219,7 @@
                                  data-start="500"
                                  data-easing="Power3.easeInOut"
                                  data-endspeed="300"
-                                 style="z-index: 3">A $16 value, totally free.
+                                 style="z-index: 3">Precisão
                             </div>
 
                             <!-- LAYER NR. 3 -->
@@ -206,7 +230,7 @@
                                  data-start="700"
                                  data-easing="Power3.easeInOut"
                                  data-endspeed="300"
-                                 style="z-index: 4">Create cool, animated sliders like this one.
+                                 style="z-index: 4">Segurança
                             </div>
 
                             <!-- LAYER NR. 4 -->
@@ -217,7 +241,7 @@
                                  data-start="900"
                                  data-easing="Power3.easeInOut"
                                  data-endspeed="300"
-                                 style="z-index: 5">So many options, unlimited creativity.
+                                 style="z-index: 5">Controle
                             </div>
                         </li>
                     </ul>
@@ -359,54 +383,83 @@
 
 <script>
     
-   
+    initLoginBox();
     
-    uLoginBox.init({});
+    jQuery(document).keyup(function(e) {
+        
+        if (e.keyCode == KEYCODE_ESC) { uLoginBox.clear() } 
+    });
     
     jQuery('#login').click(function(){
+        //        showLoginBox();
+        jQuery("#tt").show(500);
+    });
+    
+    jQuery('#login2').click(function(){
+        //        showLoginBox();
+        jQuery("#tt").hide( "500" );
+    });
+    
+    function submetence(){
+        jQuery('#loginForm').submit(function() {
+            jQuery("#botao").focus();
+            jQuery('#ajaxMessage').hide(500);
+            jQuery('#loginWaiting').show();
+            disableButton("#botao");
+            disableInput("#login-input, #senha-input");
+            if (jQuery(this).data('shouldSubmit')) {
+                return true;
+            }
+
+            jQuery.ajax({
+                url: '/login',
+                type: 'get',
+                dataType: 'json',
+                context: this,
+                data: {
+                    login : jQuery('#login-input').val(),
+                    senha : jQuery('#senha-input').val()
+                },
+                success: function (erro) {
+                    jQuery('#loginWaiting').hide();
+                    if (erro) {
+                        jQuery('#senha-input').val("");
+                        //                        jQuery('#loginMessage').html(erro.msg)
+                        jQuery('#ajaxMessage').show(500);
+                        enableButton("#botao, #cancelar");
+                        enableInput("#matricula, #senha");
+                        jQuery("#matricula").focus();
+                    }else{
+                        jQuery(this)
+                        .data('shouldSubmit', true)
+                        .submit();
+                    }
+                }
+            });
+            return false;
+        });
+    }
+    
+    function showLoginBox(){
+        
+        submetence();
+    
         uLoginBox.alert({
             width: '500px',
             opened: function() {
-                //                $("#matricula").focus();
-                //                $("#matricula, #senha").keypress(function(event) {
-                //                    if ( event.which == KEYCODE_ENTER ) {
-                //                        //loginAjax();
-                //         π           }
-                //                });
-                $('#loginCancel').click(function(){
+                jQuery("#login-input").focus();
+                jQuery("#login-input, #senha").keypress(function(event) {
+                    if ( event.which == KEYCODE_ENTER ) {
+                    }
+                });
+                jQuery('#loginCancel').click(function(){
                     uLoginBox.clear(); 
                 });
-                $('#botao').click(function(){
-                    //loginAjax();
+                jQuery('#botao').click(function(){
                 });
             }
         });
-    });
+    }
     
-=======
-COM CLASSES De novo
-<input type="text" id="t">
-<input type="button" value="asdad" id="conect">
-<input type="button" value="asdad" id="s">
-<input type="button" value="asdad" id="b">
-<div id="txt"></div>
 
-<script>
-
-    jQuery("#conect").click(function() {
-        jQuery.get("@{Supervisory.a()}", function() {
-        });
-    });
-
-    jQuery("#s").click(function() {
-        jQuery.get("@{Supervisory.s()}", function() {
-        });
-    });
-
-    jQuery("#b").click(function() {
-        jQuery.getJSON("@{Supervisory.data()}", function(data) {
-            jQuery("#txt").text(data.d);
-        });
-    });
->>>>>>> 4c25cef7bbe811286722413f27c31f42d6fe570f
 </script>

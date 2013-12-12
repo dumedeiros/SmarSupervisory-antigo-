@@ -8,30 +8,30 @@
  *
  */
 var uLoginBox = {
-         skeleton: '<div id="uLoginBoxOverlay" style="display:none" class="opaque">\n\
+    skeleton: '<div id="uLoginBoxOverlay" style="display:none" class="opaque">\n\
                             <div id="uLoginBox" class="shadow top bottom" style="display:none">\n\
                                     <div id="loginBoxHeader" class="top"></div>\n\
                                     <div id="loginBoxContent">\n\
                                             <div class="erroneous erroLogin" id="ajaxMessage">\n\
                                                     <div class="msg-box">\n\
-                                                        <label id="loginMessage">aASDAS</label>\n\
+                                                        <label id="loginMessage">msg</label>\n\
                                                     </div>\n\
                                             </div>\n\
                                             <div class="AS">\n\
                                                     <form action="/home" method="get" id="loginForm">\n\
                                                         <ol>\n\
                                                             <li>\n\
-                                                                <label for="username">Username</label>\n\
-                                                                <input name="username" type="text" value=""  id="matricula"/>\n\
+                                                                <label for="login">Usuário</label>\n\
+                                                                <input name="login" type="text" value=""  id="login-input"/>\n\
                                                             </li>\n\
                                                             <li>\n\
-                                                                <label for="password">Password</label>\n\
-                                                                <input name="password" type="password" value="" id="senha"/>\n\
+                                                                <label for="senha">Senha</label>\n\
+                                                                <input name="senha" type="password" value="" id="senha-input"/>\n\
                                                             </li>\n\
                                                             <li id="send">\n\
-                                                                <button class="btn information" id="botao" type="submit">Ok</button>\n\
-                                                                <button class="btn information" id="loginCancel" type="button">Cancelar</button>\n\
-                                                                <span id="loginWaiting" class="notDisplayable"><img src="../../../public/images/load.gif" title="Loader" alt="Loader"/></span>\n\
+                                                                <button class="btn btn-primary" id="botao" type="submit">Ok</button>\n\
+                                                                <button class="btn btn-primary" id="loginCancel" type="button">Cancelar</button>\n\
+                                                                <span id="loginWaiting" class="notDisplayable"><img src="../../../public/img/load.gif" title="Loader" alt="Loader"/></span>\n\
                                                             </li>\n\
                                                         </ol>\n\
                                                     </form>\n\
@@ -54,9 +54,9 @@ var uLoginBox = {
         
     },
     alert: function(options) {
-//        if (uLoginBox.isOpen()) {
-//            return false;
-//        }
+        //        if (uLoginBox.isOpen()) {
+        //            return false;
+        //        }
         jQuery('#uLoginBox').css({
             width: options.width
         });
@@ -87,10 +87,10 @@ var uLoginBox = {
             uLoginBox.onClick = options.onClick;
         }
     },
-//    isOpen: function() {
-//        var open = jQuery('#uLoginBox').css('display') == "block";
-//        return open;
-//    },
+    //    isOpen: function() {
+    //        var open = jQuery('#uLoginBox').css('display') == "block";
+    //        return open;
+    //    },
     clear: function() {
         jQuery('#uLoginBoxOverlay').hide();
     //        jQuery('#uLoginBoxOverlay').remove();
@@ -115,7 +115,7 @@ var uLoginBox = {
     },
     action: function(key) {
         if (key == "Cancelar" || key == "Cancel" || key == "Close" || key == "Quit" 
-|| key == "Back" || key == "OK") {
+            || key == "Back" || key == "OK") {
             uLoginBox.clear();
         }
         uLoginBox.onClick(key);

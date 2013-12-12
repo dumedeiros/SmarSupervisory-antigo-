@@ -6,8 +6,13 @@
 #   password: secret
 #   fullname: Bob
 
+Usuario(a):
+  nome: a
+  login: a
+  senhaHash: 0cc175b9c0f1b6a831c399e269772661
+
 Usuario(admin):
   nome: admin
-  login: a
-  senha: a
+  login: admin
+  senhaHash: 21232f297a57a5a743894a0e4a801fc3
   

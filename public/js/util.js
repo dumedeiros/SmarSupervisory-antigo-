@@ -2,32 +2,32 @@ var KEYCODE_ESC = 27;
 var KEYCODE_ENTER = 13;
  
 function showErro(msg){
-    $('#centralMessage').addClass("erroneous").show(500).children().text(msg);
+    jQuery('#centralMessage').addClass("erroneous").show(500).children().text(msg);
 }
 
 function showInfo(msg){
-    $('#centralMessage').addClass("informe").show(500).children().text(msg);
+    jQuery('#centralMessage').addClass("informe").show(500).children().text(msg);
 }
 
 function showWarning(msg){
-    $('#centralMessage').addClass("warning").show(500).children().text(msg);
+    jQuery('#centralMessage').addClass("warning").show(500).children().text(msg);
 }
 
 function hideMessage(){
-    $('#centralMessage').hide();
+    jQuery('#centralMessage').hide();
 }
 
 function disableButton(id){
-    $(id).attr("disabled", "disabled");
+    jQuery(id).attr("disabled", "disabled");
 }
 
 function enableButton(id){
-    $(id).removeAttr("disabled");
+    jQuery(id).removeAttr("disabled");
 }
 
 function maskare(id, mask){
-    jQuery(function($){
-        $(id).mask(mask);
+    jQuery(function(jQuery){
+        jQuery(id).mask(mask);
     });
     
 }
@@ -54,12 +54,23 @@ function errorValue(str){
     return str.substr(str.indexOf("ERRO:") + 5);
 }
 
+function updateBagQuantity(){
+    jQuery.ajax({
+        type : 'GET',
+        url: '/getBagQuantity', 
+        dataType : 'json',
+        success : function(qtd){
+            jQuery("#bagQuantity").text(qtd);
+        }
+    });
+}
+
 function disableInput(id){
-    $(id).attr("disabled", true);
-    $(id).addClass("inputDisabled");
+    jQuery(id).attr("disabled", true);
+    jQuery(id).addClass("inputDisabled");
 }
 
 function enableInput(id){
-    $(id).attr("disabled", false);
-    $(id).removeClass("inputDisabled");
+    jQuery(id).attr("disabled", false);
+    jQuery(id).removeClass("inputDisabled");
 }

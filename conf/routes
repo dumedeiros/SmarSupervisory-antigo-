@@ -4,6 +4,9 @@
 
 # Home page
 GET     /                                       Application.index
+GET    /login                                   Ajax.login
+GET     /home                           Application.redirectHomeLogin
+
 
 # Ignore favicon requests
 GET     /favicon.ico                            404

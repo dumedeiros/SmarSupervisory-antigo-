@@ -1,8 +1,9 @@
 package Utilities;
 
-import controllers.Supervisory;
+import models.Usuario;
 import play.jobs.Job;
 import play.jobs.OnApplicationStart;
+import play.test.Fixtures;
 
 //TODO fazer os inputs de malhaAberta changable
 @OnApplicationStart
@@ -11,7 +12,11 @@ public class Bootstrap extends Job {
     @Override
     public void doJob() {
 
-        Supervisory.thread.start();
+        if (Usuario.count() == 0) {
+            Fixtures.loadModels("data.yml");
+
+        }
+//        Supervisory.thread.start();
 
 //        Application.quanserController = new QuanserController();
 //
